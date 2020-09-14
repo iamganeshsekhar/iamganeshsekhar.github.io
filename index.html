@@ -22,34 +22,79 @@
         .font-grey{
             color: #8f8f8f;
         }
-        .h1{
-            font-size: 3rem;
-            font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+        .font-theme{
+            color: #EE6352;
         }
-        .h2{
+
+        .header2{
             font-size:1.125rem;
         }
         .body-txt{
             font-family: 'Poppins', Helvetica, sans-serif;
             font-size: 0.8rem;
+            font-weight: 400;
+            
         }
+        .subtitle{
+            font-family: 'Poppins', Helvetica, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            max-width: 734px;
+            margin: auto;
+            line-height: 25px;
+        }
+        
         body{
-            margin-left: 2rem;
-            margin-right: 2rem;
-            margin-top: 2rem;
+           
             background-color: #FCFCFC;
         }
+
         .navbar-nav > li{
             padding-left:20px;
         }
+
         .navbar{
-            padding: 0;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
         }
+
         .navbar-brand{
             font-family: 'Poppins', Helvetica, sans-serif;
             font-weight: 700;
             font-size: 0.8rem;
+            color: #EE6352!important;
             letter-spacing: 1px;
+        }
+
+        .header1{
+            
+            font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif !important;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3rem;
+            line-height: 60px;
+            
+          
+
+        }
+        .headerdiv{
+
+            width: 100%;
+            text-align: center;
+            top: 40%;
+            position: absolute;
+            margin-left: 0px;
+            padding-left: 30px;
+            padding-right: 30px;
+            
+           
+        }
+        
+        .worksdiv{
+            margin-top: 200px;
+            
         }
     </style>
 
@@ -58,10 +103,10 @@
 
 <body>
 
-
+<header>
     <!-- Navigation Bar -->
 
-      <nav class="navbar navbar-expand-md navbar-light ">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <a class="navbar-brand" href="#">
             <img src="\Assets\GS-logo.png" class="d-inline-block " alt="GANESH SEKHAR" loading="lazy">
           </a>
@@ -83,7 +128,51 @@
         </div>
     </nav>
 
+    <div>
+    <div class = "headerdiv ">
+        <div>
+        <h1 class="header1 font-dark text-center">
+            Hey, I am Ganesh Sekhar.
+        </h1>
+        <h2 class="subtitle font-grey">
+            UI/UX Designer, based in Kerala, India.
+        </h2>
+        <h2 class="subtitle font-dark">
+            I design great experiences for people in web and mobile apps and I believe in the power of elegant minimalism in a world increasingly saturated with complexity.
+        </h2>
+        </div>
+       
+        <div class="worksdiv">
+            <h2 class="subtitle font-grey text-center">
+                Works Ahead
+            </h2>
+            <img src="Assets/works- arrow.svg">
+
+        </div>
+        <!-- <div class="worksdiv">
+            <h2 class="subtitle font-grey">
+                Works Ahead
+            </h2>
+            <img src="Assets/works- arrow.svg">
+        </div> -->
+    </div>
  
+        
+    </div>
+</header>
+
+
+    </div>
+
+    <!-- <div class="portdiv">
+        <h2 class="header1 font-dark text-center">
+            - Works -
+        </h2>
+
+    </div> -->
+
+    
+
 </body>
 
 </html>
